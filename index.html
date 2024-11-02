@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Page Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="loadSection('welcome')">Welcome</a></li>
+          <li>
+            <a href="#" onclick="loadSection('aboutJob')">About the Job</a>
+          </li>
+          <li>
+            <a href="#" onclick="loadSection('aboutCompany')"
+              >About Our Company</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="loadSection('testimonials')">Testimonials</a>
+          </li>
+          <li>
+            <a href="#" onclick="loadSection('companyProfile')"
+              >Company Profile</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="loadSection('apply')">Apply</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content">
+      <!-- This will be dynamically populated by JavaScript -->
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
