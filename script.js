@@ -12,11 +12,46 @@ const sections = {
         </div>
       </section>
     `,
-  aboutJob: `<section id="aboutJob"><h2>About the Job</h2><p>Details about the job...</p></section>`,
-  aboutCompany: `<section id="aboutCompany"><h2>About Our Company</h2><p>Details about the company...</p></section>`,
-  testimonials: `<section id="testimonials"><h2>Testimonials</h2><p>What people say...</p></section>`,
-  companyProfile: `<section id="companyProfile"><h2>Company Profile</h2><p>Company information...</p></section>`,
-  apply: `<section id="apply"><h2>Apply</h2><p>Application process...</p></section>`,
+  aboutJob: `
+      <section id="aboutJob">
+        <div class="section-content">
+          <h2>About the Job</h2>
+          <p>Details about the job...</p>
+        </div>
+      </section>
+    `,
+  aboutCompany: `
+      <section id="aboutCompany">
+        <div class="section-content">
+          <h2>About Our Company</h2>
+          <p>Details about the company...</p>
+        </div>
+      </section>
+    `,
+  testimonials: `
+      <section id="testimonials">
+        <div class="section-content">
+          <h2>Testimonials</h2>
+          <p>What people say...</p>
+        </div>
+      </section>
+    `,
+  companyProfile: `
+      <section id="companyProfile">
+        <div class="section-content">
+          <h2>Company Profile</h2>
+          <p>Company information...</p>
+        </div>
+      </section>
+    `,
+  apply: `
+      <section id="apply">
+        <div class="section-content">
+          <h2>Apply</h2>
+          <p>Application process...</p>
+        </div>
+      </section>
+    `,
 };
 
 // Function to load a section's content
