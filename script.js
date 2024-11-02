@@ -1,5 +1,6 @@
 // Content for each section
 const sections = {
+  // Welcome section content
   welcome: `
       <section id="welcome">
         <div class="welcome-content">
@@ -12,6 +13,7 @@ const sections = {
         </div>
       </section>
     `,
+  // About the Job section content
   aboutJob: `
       <section id="aboutJob">
         <div class="section-content">
@@ -20,6 +22,7 @@ const sections = {
         </div>
       </section>
     `,
+  // About Our Company section content
   aboutCompany: `
       <section id="aboutCompany">
         <div class="section-content">
@@ -28,6 +31,7 @@ const sections = {
         </div>
       </section>
     `,
+  // Testimonials section content
   testimonials: `
       <section id="testimonials">
         <div class="section-content">
@@ -36,6 +40,7 @@ const sections = {
         </div>
       </section>
     `,
+  // Company Profile section content
   companyProfile: `
       <section id="companyProfile">
         <div class="section-content">
@@ -44,6 +49,7 @@ const sections = {
         </div>
       </section>
     `,
+  // Apply section content
   apply: `
       <section id="apply">
         <div class="section-content">
@@ -56,16 +62,17 @@ const sections = {
 
 // Function to load a section's content
 function loadSection(section) {
+  // Get the main content div by its ID
   const contentDiv = document.getElementById("content");
 
-  // Clear the content before adding new section
+  // Clear the content before adding the new section
   contentDiv.innerHTML = "";
 
   // Load the content for the selected section
   contentDiv.innerHTML = sections[section];
 }
 
-// Initially load the welcome section
+// Initially load the welcome section when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
   loadSection("welcome");
 });

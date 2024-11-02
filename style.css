@@ -1,122 +1,146 @@
+/* General Body Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url("img/24181031_m.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* Keeps the background fixed as you scroll */
+  font-family: Arial, sans-serif; /* Set font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-image: url("img/24181031_m.jpg"); /* Background image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Keep the background fixed as you scroll */
   color: #222; /* Default text color for better readability */
 }
 
+/* Header Styles */
 header {
-  background-color: rgba(51, 51, 51, 0.9); /* Slight transparency */
-  color: #fff;
-  padding: 1em;
-  text-align: center;
+  background-color: rgba(51, 51, 51, 0.9); /* Slightly transparent background */
+  color: #fff; /* White text color */
+  padding: 1em; /* Padding around the header */
+  text-align: center; /* Center text alignment */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
+/* Navigation Menu Styles */
 header nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1em;
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding from the list */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the navigation items */
+  gap: 1em; /* Space between items */
 }
 
 header nav ul li {
-  display: inline;
+  display: inline; /* Display list items inline */
 }
 
 header nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5em 1em;
-  transition: background-color 0.3s ease;
+  color: white; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+  padding: 0.5em 1em; /* Padding for clickable area */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
+/* Link Hover Effects */
 header nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
-  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2); /* Lighter background on hover */
+  border-radius: 4px; /* Rounded corners on hover */
 }
 
+/* Main Content Styles */
 main {
-  padding: 3em;
-  background-color: rgba(255, 255, 255, 0.2); /* More transparency */
+  padding: 3em; /* Padding around the main content */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Slightly transparent background */
   color: #222; /* Darker font color for contrast */
-  margin: 1em;
-  border-radius: 12px;
+  margin: 1em; /* Margin around the main content */
+  border-radius: 12px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  line-height: 1.8;
+  line-height: 1.8; /* Increased line height for readability */
 }
 
+/* Footer Styles */
 footer {
-  background-color: rgba(51, 51, 51, 0.9); /* Slight transparency */
-  color: #d3d3d3; /* Lighter text color for footer */
-  text-align: center;
-  padding: 1em;
+  background-color: rgba(
+    51,
+    51,
+    51,
+    0.9
+  ); /* Slightly transparent footer background */
+  color: #d3d3d3; /* Light gray text color */
+  text-align: center; /* Center text alignment */
+  padding: 1em; /* Padding around the footer */
   border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for separation */
-  font-size: 0.9rem;
+  font-size: 0.9rem; /* Smaller font size */
 }
 
+/* Background Overlay */
 body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  content: ""; /* Necessary for the pseudo-element */
+  position: fixed; /* Fixed position to cover entire viewport */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
   background-color: rgba(
     0,
     0,
     0,
     0.3
-  ); /* Subtle overlay to darken background image */
-  z-index: -1; /* Keeps overlay behind all content */
+  ); /* Dark overlay to enhance text visibility */
+  z-index: -1; /* Keep overlay behind all content */
 }
 
 /* Section Styles */
 section {
-  text-align: center;
+  text-align: center; /* Center text alignment within sections */
   background-color: rgba(
     255,
     255,
     255,
     0.5
-  ); /* Increased transparency for background */
-  padding: 70px; /* Increased padding for spacing */
-  border-radius: 10px; /* Rounded corners */
+  ); /* Slightly transparent section background */
+  padding: 70px; /* Padding for spacing within sections */
+  border-radius: 10px; /* Rounded corners for sections */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
   color: #222; /* Dark text color for contrast */
-  animation: fadeIn 1s ease-in-out; /* Animation for entrance */
+  animation: fadeIn 1s ease-in-out; /* Animation for section entrance */
 }
 
+/* Section Heading Styles */
 section h2 {
-  font-size: 2.5em; /* Larger heading */
+  font-size: 2.5em; /* Larger font size for headings */
   color: #222; /* Darker text color for better readability */
   text-shadow: none; /* No text shadow for a clean look */
 }
 
+/* Section Paragraph Styles */
 section p {
-  font-size: 1.2em; /* Increase paragraph font size */
+  font-size: 1.2em; /* Increased paragraph font size */
   line-height: 1.5; /* Improved line spacing */
-  color: #222; /* Dark text color for better readability */
+  color: #222; /* Dark text color for readability */
 }
 
-/* Call to Action Button */
+/* Call to Action Button Styles */
 .cta-button {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block; /* Inline-block for button layout */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Slightly transparent background */
   color: #e0e0e0; /* Button text color */
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  margin-top: 20px; /* Margin for spacing */
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners for button */
+  text-decoration: none; /* Remove underline from button text */
+  transition: background-color 0.3s; /* Smooth background color transition */
+  margin-top: 20px; /* Margin for spacing above button */
 }
 
+/* Call to Action Button Hover Effects */
 .cta-button:hover {
   background-color: rgba(255, 255, 255, 0.4); /* Lighter background on hover */
 }
@@ -124,9 +148,9 @@ section p {
 /* Keyframes for Animation */
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0; /* Start with opacity 0 */
   }
   to {
-    opacity: 1;
+    opacity: 1; /* Fade to opacity 1 */
   }
 }
