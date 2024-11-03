@@ -1,171 +1,210 @@
 /* General Body Styles */
 body {
-  font-family: Arial, sans-serif; /* Set font family */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  background-image: url("img/24181031_m.jpg"); /* Background image */
-  background-size: cover; /* Cover the entire background */
-  background-position: center; /* Center the background image */
-  background-attachment: fixed; /* Keep the background fixed as you scroll */
-  color: #222; /* Default text color for better readability */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("img/24181031_m.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #222;
 }
 
 /* Header Styles */
 header {
-  background-color: rgba(51, 51, 51, 0.9); /* Slightly transparent background */
-  color: #fff; /* White text color */
-  padding: 1em; /* Padding around the header */
-  text-align: center; /* Center text alignment */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  background-color: rgba(51, 51, 51, 0.9);
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Navigation Menu Styles */
 header nav ul {
-  list-style: none; /* Remove default list styling */
-  padding: 0; /* Remove padding from the list */
-  display: flex; /* Use flexbox for layout */
-  justify-content: center; /* Center the navigation items */
-  gap: 1em; /* Space between items */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
 
 header nav ul li {
-  display: inline; /* Display list items inline */
+  display: inline;
 }
 
 header nav ul li a {
-  color: white; /* White text color for links */
-  text-decoration: none; /* Remove underline from links */
-  padding: 0.5em 1em; /* Padding for clickable area */
-  transition: background-color 0.3s ease; /* Smooth background color transition */
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s ease;
 }
 
 /* Link Hover Effects */
 header nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Lighter background on hover */
-  border-radius: 4px; /* Rounded corners on hover */
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
 }
 
 /* Main Content Styles */
 main {
-  padding: 3em; /* Padding around the main content */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.2
-  ); /* Slightly transparent background */
-  color: #222; /* Darker font color for contrast */
-  margin: 1em; /* Margin around the main content */
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  line-height: 1.8; /* Increased line height for readability */
+  padding: 3em;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #222;
+  margin: 1em;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  line-height: 1.8;
 }
 
 /* Footer Styles */
 footer {
-  background-color: rgba(
-    51,
-    51,
-    51,
-    0.9
-  ); /* Slightly transparent footer background */
-  color: #d3d3d3; /* Light gray text color */
-  text-align: center; /* Center text alignment */
-  padding: 1em; /* Padding around the footer */
-  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for separation */
-  font-size: 0.9rem; /* Smaller font size */
+  background-color: rgba(51, 51, 51, 0.9);
+  color: #d3d3d3;
+  text-align: center;
+  padding: 1em;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
 }
 
 /* Background Overlay */
 body::before {
-  content: ""; /* Necessary for the pseudo-element */
-  position: fixed; /* Fixed position to cover entire viewport */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.3
-  ); /* Dark overlay to enhance text visibility */
-  z-index: -1; /* Keep overlay behind all content */
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
 }
 
 /* Section Styles */
 section {
-  text-align: center; /* Center text alignment within sections */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* Slightly transparent section background */
-  padding: 70px; /* Padding for spacing within sections */
-  border-radius: 10px; /* Rounded corners for sections */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  color: #222; /* Dark text color for contrast */
-  animation: fadeIn 1s ease-in-out; /* Animation for section entrance */
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 70px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #222;
+  animation: fadeIn 1s ease-in-out;
 }
 
 /* Section Heading Styles */
 section h2 {
-  font-size: 2.5em; /* Larger font size for headings */
-  color: #222; /* Darker text color for better readability */
-  text-shadow: none; /* No text shadow for a clean look */
+  font-size: 2.5em;
+  color: #222;
+  text-shadow: none;
 }
 
 /* Section Paragraph Styles */
 section p {
-  font-size: 1.2em; /* Increased paragraph font size */
-  line-height: 1.5; /* Improved line spacing */
-  color: #222; /* Dark text color for readability */
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #222;
 }
 
 /* About Job Section Specific Styles */
 #aboutJob .section-content p {
-  font-size: 1.2em; /* Consistent font size with other sections */
-  line-height: 1.8; /* Set line height for readability */
-  color: #222; /* Dark color for contrast */
-  margin-bottom: 1em; /* Add space between paragraphs */
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #222;
+  margin-bottom: 1em;
 }
 
 #aboutJob h2 {
-  font-size: 2.5em; /* Match heading size with other sections */
-  color: #222; /* Ensure a dark, readable color */
-  text-align: center; /* Center-align for consistency */
-  margin-bottom: 0.5em; /* Adjust spacing below the heading */
+  font-size: 2.5em;
+  color: #222;
+  text-align: center;
+  margin-bottom: 0.5em;
 }
 
 /* Call to Action Button Styles */
 .cta-button {
-  display: inline-block; /* Inline-block for button layout */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.2
-  ); /* Slightly transparent background */
-  color: #e0e0e0; /* Button text color */
-  padding: 10px 20px; /* Padding for button */
-  border-radius: 5px; /* Rounded corners for button */
-  text-decoration: none; /* Remove underline from button text */
-  transition: background-color 0.3s; /* Smooth background color transition */
-  margin-top: 20px; /* Margin for spacing above button */
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #e0e0e0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: 20px;
 }
 
 /* Call to Action Button Hover Effects */
 .cta-button:hover {
-  background-color: rgba(255, 255, 255, 0.4); /* Lighter background on hover */
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 /* Keyframes for Animation */
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Start with opacity 0 */
+    opacity: 0;
   }
   to {
-    opacity: 1; /* Fade to opacity 1 */
+    opacity: 1;
+  }
+}
+
+/* Media Queries for Responsive Design */
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+  section h2 {
+    font-size: 2.5em;
+  }
+  section p {
+    font-size: 1.2em;
+  }
+  .cta-button {
+    padding: 12px 24px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  main {
+    padding: 2em;
+  }
+  section {
+    padding: 50px;
+  }
+  section h2 {
+    font-size: 2em;
+  }
+  section p {
+    font-size: 1.1em;
+  }
+  header nav ul {
+    gap: 0.5em;
+  }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 767px) {
+  body {
+    background-attachment: scroll; /* Change background behavior for mobile */
+  }
+  main {
+    padding: 1em;
+    margin: 0.5em;
+  }
+  header {
+    padding: 0.5em;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  section {
+    padding: 30px;
+  }
+  section h2 {
+    font-size: 1.5em;
+  }
+  section p {
+    font-size: 1em;
+  }
+  .cta-button {
+    padding: 8px 16px;
   }
 }
