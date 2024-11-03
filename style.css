@@ -123,6 +123,21 @@ section p {
   color: #222; /* Dark text color for readability */
 }
 
+/* About Job Section Specific Styles */
+#aboutJob .section-content p {
+  font-size: 1.2em; /* Consistent font size with other sections */
+  line-height: 1.8; /* Set line height for readability */
+  color: #222; /* Dark color for contrast */
+  margin-bottom: 1em; /* Add space between paragraphs */
+}
+
+#aboutJob h2 {
+  font-size: 2.5em; /* Match heading size with other sections */
+  color: #222; /* Ensure a dark, readable color */
+  text-align: center; /* Center-align for consistency */
+  margin-bottom: 0.5em; /* Adjust spacing below the heading */
+}
+
 /* Call to Action Button Styles */
 .cta-button {
   display: inline-block; /* Inline-block for button layout */
