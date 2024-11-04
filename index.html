@@ -3,57 +3,70 @@
   <head>
     <!-- Character encoding for the document -->
     <meta charset="UTF-8" />
-    <!-- Viewport settings for responsive design -->
+    <!-- Responsive design viewport settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Title of the webpage displayed in the browser tab -->
     <title>Vision Quest Ad</title>
+    <!-- Favicon link for browser tab icon -->
     <link rel="icon" href="img/favicon (3).ico" type="image/x-icon" />
-    <!-- Link to the external CSS stylesheet -->
+    <!-- Link to the external stylesheet for styling -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <!-- Navigation menu -->
       <nav>
         <ul>
-          <!-- Link to the Welcome section -->
-          <li><a href="#" onclick="loadSection('welcome')">Welcome</a></li>
-          <!-- Link to the About the Job section -->
-          <li>
-            <a href="#" onclick="loadSection('aboutJob')">About the Job</a>
-          </li>
-          <!-- Link to the About Our Company section -->
-          <li>
-            <a href="#" onclick="loadSection('aboutCompany')"
-              >Career Development</a
-            >
-          </li>
-          <!-- Link to the Testimonials section -->
-          <li>
-            <a href="#" onclick="loadSection('testimonials')">Testimonials</a>
-          </li>
-          <!-- Link to the Company Profile section -->
-          <li>
-            <a href="#" onclick="loadSection('companyProfile')">About Us</a>
-          </li>
-          <!-- Link to the Apply section -->
-          <li>
-            <a href="#" onclick="loadSection('apply')">Apply</a>
-          </li>
+          <!-- Navigation links to different sections of the page -->
+          <li><a href="#welcome">Welcome</a></li>
+          <li><a href="#aboutJob">About the Job</a></li>
+          <li><a href="#aboutCompany">Career Development</a></li>
+          <!-- Uncomment the line below to enable the testimonials section -->
+          <!-- <li><a href="#testimonials">Testimonials</a></li> -->
+          <li><a href="#companyProfile">About Us</a></li>
+          <li><a href="#apply">Apply</a></li>
         </ul>
       </nav>
     </header>
 
     <main id="content">
-      <!-- This will be dynamically populated by JavaScript -->
+      <section id="welcome">
+        <h1>Welcome</h1>
+        <p>Welcome to Vision Quest. Your journey starts here!</p>
+      </section>
+
+      <section id="aboutJob">
+        <h2>About the Job</h2>
+        <p>Details about the job will be dynamically populated here.</p>
+      </section>
+
+      <section id="aboutCompany">
+        <h2>Career Development</h2>
+        <p>Information on career growth and development opportunities.</p>
+      </section>
+
+      <!--
+      <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>Hear from our satisfied employees.</p>
+      </section>
+      -->
+
+      <section id="companyProfile">
+        <h2>About Us</h2>
+        <p>Learn more about Vision Quest and our mission.</p>
+      </section>
+
+      <section id="apply">
+        <h2>Apply</h2>
+        <p>Ready to join us? Apply now!</p>
+      </section>
     </main>
 
     <footer>
-      <!-- Footer with copyright information -->
+      <!-- Copyright notice -->
       <p>&copy; 2024 Vision Quest</p>
     </footer>
 
-    <!-- Link to the external JavaScript file -->
+    <!-- Link to the external JavaScript file for interactive features -->
     <script src="script.js"></script>
   </body>
 </html>

@@ -12,11 +12,14 @@ body {
 
 /* Header Styles */
 header {
-  background-color: rgba(51, 51, 51, 0.9);
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Sticks to the top of the viewport */
+  background-color: rgba(51, 51, 51, 0.9); /* Background color */
   color: #fff;
   padding: 1em;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's above other content */
 }
 
 /* Navigation Menu Styles */
@@ -82,7 +85,8 @@ body::before {
 section {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 70px;
+  padding: 30px;
+  margin: 20px 0; /* Added margin for spacing between sections */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   color: #222;
@@ -101,21 +105,6 @@ section p {
   font-size: 1.2em;
   line-height: 1.5;
   color: #222;
-}
-
-/* About Job Section Specific Styles */
-#aboutJob .section-content p {
-  font-size: 1.2em;
-  line-height: 1.8;
-  color: #222;
-  margin-bottom: 1em;
-}
-
-#aboutJob h2 {
-  font-size: 2.5em;
-  color: #222;
-  text-align: center;
-  margin-bottom: 0.5em;
 }
 
 /* Call to Action Button Styles */
