@@ -1,0 +1,19 @@
+<nav>
+  <ul>
+    <!-- Navigation links to different sections of the page -->
+    <li><a href="#welcome">Welcome</a></li>
+    <li><a href="#aboutJob">About the Job</a></li>
+    <li><a href="#aboutCompany">Career Development</a></li>
+    <!-- Uncomment the line below to enable the testimonials section -->
+    <!-- <li><a href="#testimonials">Testimonials</a></li> -->
+    <li><a href="#companyProfile">About Us</a></li>
+    <li><a href="#apply">Apply</a></li>
+  </ul>
+</nav>
+
+// Function to load all sections' content into the main content area function
+loadAllSections() { const contentDiv = document.getElementById("content"); //
+Concatenate all section HTML strings and insert into the content div
+contentDiv.innerHTML = Object.values(sections).join(""); } // Initially load all
+sections when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", () => { loadAllSections(); });
